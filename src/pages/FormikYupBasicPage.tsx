@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import "../styles/styles.css";
 
-const FormikYupBasicPage = () => {
+export const FormikYupBasicPage = () => {
   const {
     handleSubmit,
     errors,

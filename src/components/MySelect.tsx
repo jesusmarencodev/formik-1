@@ -8,7 +8,7 @@ interface Props {
   [x: string]: any;
 }
 
-const MySelect = ({ label, ...props }: Props) => {
+export const MySelect = ({ label, ...props }: Props) => {
   const [field] = useField(props);
 
   return (

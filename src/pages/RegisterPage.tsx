@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/styles.css";
 import { useForm } from "../hooks/useForm";
 
-const RegisterPage = () => {
+export const RegisterPage = () => {
   const { name, email, password1, password2, handlerChange, onSubmit, resetForm, isValidEmail } = useForm({
     name: "",
     email: "",

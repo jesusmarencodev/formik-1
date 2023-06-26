@@ -2,7 +2,7 @@ import { useFormik, Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "../styles/styles.css";
 
-const FormikComponents = () => {
+export const FormikComponents = () => {
   return (
     <div>
       <h1>FormikComponents</h1>

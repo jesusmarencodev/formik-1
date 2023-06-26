@@ -1,9 +1,10 @@
 import { Form, Formik } from "formik";
 import * as Yup from "yup";
 import "../styles/styles.css";
-import MyTextInput from "../components/MyTextInput";
+import { MyTextInput } from "../components";
 
-const RegisterFormikPage = () => {
+
+export const RegisterFormikPage = () => {
   return (
     <div>
       <h1>RegisterFormikPage</h1>
