@@ -9,6 +9,8 @@ import {
 import logo from "../logo.svg";
 import RegisterPage from "../pages/RegisterPage";
 import FormikBasicPage from "../pages/FormikBasicPage";
+import FormikYupBasicPage from "../pages/FormikYupPage";
+import FormikComponents from "../pages/FormikComponents";
 
 export const Navigation = () => {
   return (
@@ -35,10 +37,18 @@ export const Navigation = () => {
             </li>
             <li>
               <NavLink
-                to="/users"
+                to="/formik-yup"
                 className={({ isActive }) => (isActive ? "nav-active" : "")}
               >
-                User
+                FormikYupPage
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/formik-components"
+                className={({ isActive }) => (isActive ? "nav-active" : "")}
+              >
+                FormikComponents
               </NavLink>
             </li>
           </ul>
@@ -46,8 +56,8 @@ export const Navigation = () => {
         <Routes>
           <Route path="/register" element={<RegisterPage/>} />
           <Route path="/formik-basic" element={<FormikBasicPage/>} />
-          <Route path="/users" element={<h1>Users</h1>} />
-          <Route path="/home" element={<h1>Home</h1>} />
+          <Route path="/formik-yup" element={<FormikYupBasicPage/>} />
+          <Route path="/formik-components" element={<FormikComponents/>} />
           <Route path="/*" element={<Navigate to="/home" replace />} />
         </Routes>
       </div>
