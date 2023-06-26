@@ -1,0 +1,79 @@
+[
+    {
+        "type": "input",
+        "name":"fistName",
+        "placeholder": "Jesus",
+        "label": "Fist Name",
+        "value": "",
+        "validations":[
+            {
+                "type":"required"
+            },
+            {
+                "type":"minLength",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name":"lastName",
+        "placeholder": "Marenco",
+        "label": "Last Name",
+        "value": "",
+        "validations":[
+            {
+                "type":"required"
+
+            },
+            {
+                "type":"minLength",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name":"email",
+        "placeholder": "j@j.com",
+        "label": "Email",
+        "value": "",
+        "validations":[
+            {
+                "type":"required"
+            },
+            {
+                "type":"email"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name":"favorite Game",
+        "label": "Favorite Game",
+        "value": "",
+        "options":[
+            {
+                "id":1,
+                "label":"Pokemon",
+                "value":"pokemon"
+            },
+            {
+                "id":2,
+                "label":"Mario",
+                "value":"mario"
+            },
+            {
+                "id":3,
+                "label":"Futbol",
+                "value":"futbol"
+            }
+        ],
+        "validations":[
+            {
+                "type":"required"
+
+            }
+        ]
+    }
+]
